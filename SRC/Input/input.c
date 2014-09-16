@@ -13,5 +13,5 @@ void getInput(double *a, double *b, double *c)
 {
   	printf("Enter coefficients a, b and c: ");
   	scanf("%lf%lf%lf",&*a,&*b,&*c);
-  	printf("Your input is %lf, %lf, %lf . Input successfully read.");
+  	//printf("Your input is %lf, %lf, %lf . Input successfully read.", a,b,c);
 }

@@ -2,7 +2,7 @@ CFLAGS= -Wall -pedantic -std=c99
 CC= gcc
 LIBS = -lm
 
-all: input
+all: main
 
 debug: CC += -DDEBUG -g
 debug: executable
@@ -11,6 +11,6 @@ quadTest:	Quad/quadTest.c Quad/quad.c
 	${CC} -o quadTest quadTest.c quad.c ${LIBS}
 	./quadTest
 
-input:	input.c inputTest.c
-	${CC} -o inputTest input.c inputTest.c ${LIBS}
-	./inputTest
+main:	main.c testMain.c ../Quad/quad.c ../Input/input.c ../Output/output.c
+	${CC} -o testMain main.c testMain.c ${LIBS}
+	./testMain
