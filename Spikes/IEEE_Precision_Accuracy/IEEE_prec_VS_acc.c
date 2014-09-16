@@ -14,9 +14,9 @@ printf("99.95 as double = %lf\n", doublevar); // 99.95 = 99.950000
 
 if (fabs(x-y) < error)
 if ((fabs(x-y)/fabs(x) + fabs(y)) < error)
-printf("success")
+printf("success");
 else
-printf("fail")
+printf("fail");
 
 
 return 0;
