@@ -13,21 +13,21 @@ int main()
 	printf("PASS\n");
 	else
 	printf("FAIL\n");
+	
 
-
-	double a = 1, b = 1, c = -4;
-	quad(a,b,c &imagFlag, &r1, &r2);
+	a = 1, b = 1, c = -4;
+	quad(a, b, c, &imagFlag, &r1, &r2);
 	if (imagFlag == true)
-		printf("PASS\n");
+	printf("PASS\n");
 	else
-		printf("FAIL\n");
+	printf("FAIL\n");
 
-	double a = 4, b = 4, c = 8;
-	quad(a,b,c &imagFlag, &r1, &r2);
+	a = 4, b = 4, c = 8;
+	quad(a, b, c, &imagFlag, &r1, &r2);
 	if (imagFlag == true)
-		printf("PASS\n");
+	printf("PASS\n");
 	else
-		printf("FAIL\n");
+	printf("FAIL\n");
 
 	a = 1, b = 1, c = 1;
 	quad(a, b, c, &imagFlag, &r1, &r2);
