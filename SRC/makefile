@@ -11,5 +11,5 @@ quadTest:	./Quad/quadTest.c ./Quad/quad.c
 	${CC} -o /Quad/quadTest.c ./Quad/quad.c ${LIBS}
 
 executable:	./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c
-	${CC} ./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c ${LIBS}
+	${CC} -o demo ./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c ${LIBS}
 	./demo
