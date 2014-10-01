@@ -1,0 +1,1 @@
+Hello World! This is my first commit/push via Ubuntu! Now how to make a readme MD File
