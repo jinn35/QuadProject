@@ -8,17 +8,3 @@ At: https://github.com/jinn35/QuadProject
 How it works:
  1) Enter desired values as prompted.
  2) Results will be computed and displayed to console.
-
-Instructions for Git:
-1. For new Users, navigate to wherever and 
-git clone repository https url
-
-2. git pull (get new version)
-
-3. git status 
-
-4 git add .
-
-5. git commit -m "Your message"
-
-6. git push
