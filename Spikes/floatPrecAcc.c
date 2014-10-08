@@ -6,6 +6,7 @@ int main() {
 float floatvar = 99.95;
 double doublevar = 99.95;
 double x = 1.6,y = 1.8, error = .7;
+double epsilon;
 
 
 printf("99.95 as float = %f\n", floatvar);   // 99.95 = 99.949997
@@ -16,6 +17,11 @@ if ((fabs(x-y)/fabs(x) + fabs(y)) < error)
 printf("success")
 else
 printf("fail")
+
+for (int a=0;a <= 10; a+=)
+{
+  a = a/2;
+}
 
 return 0;
 }
