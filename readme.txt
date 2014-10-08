@@ -1,3 +1,5 @@
+Quadratic formula solver written in C follwing C11 standards.
+
 How to get started:
 
 Instructions for using GitHubs with terminal commands:
