@@ -16,6 +16,7 @@ int out2(double r1, double r2)
 
 int out3(double real, double imag)
 {
-	printf("Roots are: %.2lf+%.2lfi and %.2lf-%.2lfi \n", real, imag, real, imag);
+	printf("This quadratic features 2 imaginary roots! \n");
+	//Roots are: %.2lf+%.2lfi and %.2lf-%.2lfi \n", real, imag, real, imag);
 	return 0;
 }
