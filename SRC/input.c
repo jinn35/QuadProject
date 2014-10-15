@@ -1,4 +1,6 @@
 /* input.c*/
+/* follows GNU Coding Standards*/
+
 #include <stdio.h>
 #include "input.h"
 #include "quad.h"
