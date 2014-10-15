@@ -3,11 +3,9 @@
 #include "input.h"
 #include "quad.h"
 
-double getInput()
+void getInput(double *a, double *b, double *c)
 {
-	double a, b, c, det;
+	double det;
   	printf("Enter coefficients a, b and c: ");
-  	scanf("%lf%lf%lf",&a,&b,&c);
-	det = quad(a,b,c);
-	return 0.0;
+  	scanf("%lf%lf%lf",&*a,&*b,&*c);
 }

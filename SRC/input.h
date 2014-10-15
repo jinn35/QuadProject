@@ -2,6 +2,6 @@
 #define INPUT_H_INCLUDED
 /*^^include guards^^*/
 
-double getInput(void);
+void getInput(double *, double *, double *);
 
 #endif

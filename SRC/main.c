@@ -4,6 +4,8 @@
 int main()
 {
   	double a, b, c, determinant, r1,r2, real, imag;
-	determinant = getInput();
+	getInput(&a, &b, &c);
+	quad(a, b, c);
+
   	return 0;
 }
