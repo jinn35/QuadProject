@@ -1,4 +1,6 @@
 /* output.c*/
+/*follows GNU Coding Standards*/
+
 #include <stdio.h>
 #include "output.h"
 
