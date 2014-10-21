@@ -7,6 +7,10 @@ all: executable
 debug: CC += -DDEBUG -g
 debug: executable
 
+quadTest:	quadTest.c quad.c
+	${CC} -o quadTest quadTest.c quad.c ${LIBS}
+	./quadTest
+
 executable:	main.c quad.c input.c output.c
 	${CC} -o test1 main.c quad.c input.c output.c ${LIBS}
 	./test1
