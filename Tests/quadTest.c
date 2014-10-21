@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "quad.h"
 
+double a, b, c, r1, r2;
+bool imagFlag;
+
 int main()
 {
 
