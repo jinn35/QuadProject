@@ -1,5 +1,5 @@
-Spike-Test:
+Spike-Test: Square Root
 
-Description:
+Description: This spike tests the square root function.
 
-How to run: Type make in the console in the specified directory. Then, ./spike to run.
+How to run: Type make in the console in the specified directory to compile, then ./spike to run the spike.
