@@ -1,20 +1,21 @@
-/*main.c*/
-/*follows GNU Coding Standards*/
+/*
+main.c
+Authors: Joseph Alflen, Joshua Inniger, Ailun Shen
+Follows C11 & GNU Coding Standards 
+*/
 
 #include <stdio.h>
 #include "main.h"
 #include "input.h"
 #include "output.h"
 
+//global variables for coefficients, results, and a flag for imaginary numbers.
 double a, b, c, r1, r2;
 bool imagFlag;
 
-int main()
+main()
 {
-  	//double a, b, c, determinant, r1, r2;
 	getInput(&a, &b, &c);
 	quad(a, b, c, &imagFlag, &r1, &r2);
 	printRoots(r1, r2, imagFlag);
-	
-  	return 0;
 }

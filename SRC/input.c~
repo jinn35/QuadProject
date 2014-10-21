@@ -1,15 +1,13 @@
 /* input.c*/
+/* follows GNU Coding Standards*/
+
 #include <stdio.h>
 #include "input.h"
 #include "quad.h"
-#include "cstruct.h"
 
-//struct coefficients getInput();
-struct coefficients getInput()
+//grabs input from user via keyboard
+void getInput(double *a, double *b, double *c)
 {
-	struct coefficients input;
-	double det;
   	printf("Enter coefficients a, b and c: ");
-  	scanf("%lf%lf%lf",input.a, input.b, input.c);
-	return input;
+  	scanf("%lf%lf%lf",&*a,&*b,&*c);
 }
