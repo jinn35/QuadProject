@@ -1,0 +1,15 @@
+/* input.c*/
+#include <stdio.h>
+#include "input.h"
+#include "quad.h"
+#include "cstruct.h"
+
+//struct coefficients getInput();
+struct coefficients getInput()
+{
+	struct coefficients input;
+	double det;
+  	printf("Enter coefficients a, b and c: ");
+  	scanf("%lf%lf%lf",input.a, input.b, input.c);
+	return input;
+}

@@ -19,7 +19,7 @@ double quad(double a, double b, double c)
   	else if (determinant==0)
   	{
     		r1 = r2 = -b/(2*a);
-		int y = out2(r1,r2);
+		int y = out1(r1,r2);
   	}
   	else
   	{
