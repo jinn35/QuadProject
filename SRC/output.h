@@ -2,8 +2,12 @@
 #define OUTPUT_H_INCLUDED
 /*^^include guards^^*/
 
-int out1(double r1, double r2);
-int out2(double r1, double r2);
-int out3(double real, double imag);
+typedef int bool;
+#define true 1
+#define false 0
+
+void printOutput(double r1, double r2);
+
+void printImaginary(double *real, double *imag);
 
 #endif
