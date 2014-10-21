@@ -5,10 +5,10 @@ Spikes used/tested:
       float sqrt (float x);
 Reference of "math.h": http://www.cplusplus.com/reference/cmath/
 
-2) Precision and accuracy of floats
-
+2) IEEE Precision and accuracy of floats
 Reference: http://en.wikipedia.org/wiki/IEEE_floating_point
 
-3) Comparing floats demo
+3) IEEE Comparing floats demo
+Reference: http://en.wikipedia.org/wiki/IEEE_floating_point
 
 
