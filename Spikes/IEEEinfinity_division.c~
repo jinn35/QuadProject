@@ -1,0 +1,12 @@
+#include <math.h>
+
+int main() {
+
+double x = INFINITY;
+double y = NAN;
+
+printf("%f\n", x);
+
+return 0;
+}
+
