@@ -1,15 +1,19 @@
-CFLAGS= -Wall -pedantic -std=c99 
+CFLAGS= -std=c99 -w
+#CFLAGS= -pedantic
+#CFLAGS= -Wall
+ 
 CC= gcc
 LIBS = -lm
 
-all:executable
+all:quadTest quadSolver
 
 debug: CC += -DDEBUG -g
-debug: executable
+debug: quadSolver
 
 quadTest:	./Quad/quadTest.c ./Quad/quad.c
-	${CC} -o /Quad/quadTest.c ./Quad/quad.c ${LIBS}
+	${CC} -o quadTest ./Quad/quadTest.c ./Quad/quad.c ${LIBS}
+	./quadTest
 
-executable:	./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c
-	${CC} -o demo ./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c ${LIBS}
+quadSolver:	./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c
+	${CC} ${CFLAGS} -o demo ./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c ${LIBS}
 	./demo
