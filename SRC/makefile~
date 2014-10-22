@@ -1,4 +1,4 @@
-CFLAGS= -std=c99
+CFLAGS= -std=c99 -w
 #CFLAGS= -pedantic
 #CFLAGS= -Wall
  
@@ -10,8 +10,12 @@ all:quadTest quadSolver
 debug: CC += -DDEBUG -g
 debug: quadSolver
 
-quadTest:	./Quad/quadTest.c ./Quad/quad.c
-	${CC} -o quadTest ./Quad/quadTest.c ./Quad/quad.c ${LIBS}
+#quadTest:	./Quad/quadTest.c ./Quad/quad.c
+#	${CC} -o quadTest ./Quad/quadTest.c ./Quad/quad.c ${LIBS}
+#	./quadTest
+
+quadTest:	./Quad/quadTest.c
+	${CC} -o quadTest ./Quad/quadTest.c  ${LIBS}
 	./quadTest
 
 quadSolver:	./Main/main.c ./Quad/quad.c ./Input/input.c ./Output/output.c

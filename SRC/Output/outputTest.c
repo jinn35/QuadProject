@@ -1,7 +1,7 @@
 /*
 For testing the output
-
 */
+
 #include <stdio.h>
 #include "output.h"
 
