@@ -11,11 +11,11 @@ Follows C11 & GNU Coding Standards
 //grabs input from user via keyboard
 void getInput(double *a, double *b, double *c)
 {
-	char buf[10];
-	char *p;
-  	printf("Enter coefficients a, b and c: ");
+	char buf[20];
+  	printf("Enter coefficients a, b and c seperated by a space: ");
 	if (fgets(buf, sizeof(buf), stdin) != NULL)
-	sscanf( dtm, "%s %s %d  %d", weekday, month, &day, &year );
-  	scanf("%lf%lf%lf",&*a,&*b,&*c);
-  	//printf("Your input is %lf, %lf, %lf . Input successfully read.", a,b,c);
+	{
+		printf ("Thank you, you entered >%s<\n", buf);
+		sscanf(buf, "%lf %lf %lf", &*a, &*b, &*c);g(buf);
+	}	
 }

@@ -6,8 +6,8 @@ Follows C11 & GNU Coding Standards
 
 #include <stdio.h>
 #include "main.h"
-#include "input.h"
-#include "output.h"
+#include "../Input/input.h"
+#include "../Output/output.h"
 
 //global variables for coefficients, results, and a flag for imaginary numbers.
 double a, b, c, r1, r2;
@@ -15,7 +15,7 @@ bool imagFlag;
 
 main()
 {
-	getInput(&a, &b, &c);
+	getInput();
 	quad(a, b, c, &imagFlag, &r1, &r2);
 	printRoots(r1, r2, imagFlag);
 }

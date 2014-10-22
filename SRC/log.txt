@@ -1,1 +1,1 @@
-Roots are: -0.59 and -3.41 
+This quadratic features 2 imaginary roots! 
