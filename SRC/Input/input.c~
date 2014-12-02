@@ -18,6 +18,7 @@ void getInput(double *a, double *b, double *c)
 	int num_variables;
 	int flag = 0; //0 = true, 1 = false	
 	
+// coefficient a
 	do
 	{
   		printf("Enter coefficient a: ");
@@ -33,6 +34,7 @@ void getInput(double *a, double *b, double *c)
 	} while (flag == 1);
 	sscanf(bufa, "%lf", &*a);	
 
+// coefficient b
 	do
 	{
   		printf("Enter coefficient b: ");
@@ -48,6 +50,7 @@ void getInput(double *a, double *b, double *c)
 	} while (flag == 1);
 	sscanf(bufb, "%lf", &*b);
 
+// coefficient C
 	do
 	{
   		printf("Enter coefficient c: ");
@@ -61,18 +64,5 @@ void getInput(double *a, double *b, double *c)
 		else
 			flag = 0;
 	} while (flag == 1);
-	sscanf(bufc, "%lf", &*c);
-
-//	if (fgets(buf, sizeof(buf), stdin) != NULL)
-//	{
-//		for (int i = 0; i <= sizeof(buf); i++)
-//		{
-//			if( isdigit(buf[i]
-//		}
-//		printf ("Thank you, you entered >%s<\n", buf);
-//		
-//		num_variables = sscanf(buf, " %lf %lf %lf", &*a, &*b, &*c);
-//		assert (num_variables = 3);
-//		printf ("%d", num_variables);
-//	}	
+	sscanf(bufc, "%lf", &*c);	
 }

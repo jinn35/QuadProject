@@ -24,7 +24,7 @@ void getInput(double *a, double *b, double *c)
   		printf("Enter coefficient a: ");
 		fgets(bufa, sizeof(bufa), stdin);
 
-		if (!isdigit(bufa[0]) && bufa[0] != ".")
+		if (!isdigit(bufa[0]) && bufa[0] != '.')
 		{
 			printf("not a number!\n");
 			flag = 1;

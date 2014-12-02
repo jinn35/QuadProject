@@ -1,9 +1,3 @@
-/*
-output.c 
-Authors: Joseph Alflen, Joshua Inniger, Ailun Shen
-Follows C11 & GNU Coding Standards 
-*/
-
 #include <stdio.h>
 #include "output.h"
 

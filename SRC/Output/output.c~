@@ -13,6 +13,7 @@ bool imagFlag;
 
 void printRoots(double r1, double r2, bool imagFlag)
 {
+	freopen("log.txt","w",stdout);
 	if (imagFlag == false)
 	printf("Roots are: %.2lf and %.2lf \n",r1 , r2);
 	else
